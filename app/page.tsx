@@ -1,5 +1,4 @@
 import BlogGrid from "./components/blogGrid";
-import Hero from "./components/hero";
 import Navbar from "./components/navbar";
 import { getAllPosts } from '../lib/posts';  
 import { Post } from '../types';  
@@ -11,9 +10,8 @@ export default async function Home() {
   return (
     <main>
       <Navbar />
-      <Hero />
+      <Grid posts={posts} />
       <BlogGrid posts={posts} /> 
-      <Grid />
     </main>
   );
 }

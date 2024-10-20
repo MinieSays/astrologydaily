@@ -13,7 +13,11 @@ export default function BlogGrid({ posts }: BlogGridProps) {
   return (
     <section id="blog__gallery">
       <div className="container">
-        <div className="blog__row row">
+        <div className="row">
+          <h2 className="blog__grid--title">
+            Recent Posts
+          </h2>
+        <div className="blog__row">
           {posts.map((post) => (
             <BlogCard
               key={post.slug}
@@ -23,6 +27,7 @@ export default function BlogGrid({ posts }: BlogGridProps) {
               slug={post.slug}
             />
           ))}
+        </div>
         </div>
       </div>
     </section>
