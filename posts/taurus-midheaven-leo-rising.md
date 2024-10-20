@@ -1,6 +1,14 @@
+---
+title: "Taurus Midheaven Leo Rising"
+excerpt: "People with Taurus Midheaven Leo Rising are social creatures. You attract others from all walks of life."
+image: "/taurus.jpg"
+slug: "taurus-midheaven-leo-rising"
+
+---
+
 # Taurus Midheaven Leo Rising – Main Character Energy
 
-People with Taurus Midheaven Leo Rising are social creatures. You attract others from all walks of life. Your openness, natural charisma, and optimism make you shine in social situations. However, you also turn heads with your unique sense of fashion. There’s a fiery passion behind your personality, making you the life of the party wherever you go. You are incredibly generous towards people you love and even strangers. As a natural-born leader, people often follow your advice, or you are seen as an authority figure at work.
+People with Taurus Midheaven Leo Rising are social creatures of the zodiac gang. You attract others from all walks of life. Your openness, natural charisma, and optimism make you shine in social situations. However, you also turn heads with your unique sense of fashion. There’s a fiery passion behind your personality, making you the life of the party wherever you go. You are incredibly generous towards people you love and even strangers. As a natural-born leader, people often follow your advice, or you are seen as an authority figure at work.
 
 ## Good Taste
 

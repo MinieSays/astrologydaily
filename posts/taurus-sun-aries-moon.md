@@ -1,3 +1,11 @@
+---
+title: "Taurus Sun Aries Moon"
+excerpt: "If you’re a person with Taurus Sun Aries Moon, you may appear calm and collected to others, but underneath the surface, you’ve got this tornado of energy."
+image: "/taurus.jpg"
+slug: "taurus-sun-aries-moon"
+
+---
+
 # Taurus Sun Aries Moon
 
 If you’re a person with Taurus Sun Aries Moon, you may appear calm and collected to others, but underneath the surface, you’ve got this tornado of energy. With Aries here, there’s a fiery passion in everything you do. These strong feelings push you to work relentlessly towards your goals. Ambitious by nature, you strive for a comfortable life filled with excitement and adventure.

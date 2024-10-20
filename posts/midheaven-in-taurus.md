@@ -1,3 +1,10 @@
+---
+title: "Midheaven in Taurus - Abundance Galore"
+excerpt: "The sign Taurus is known for being simple, grounded, and sometimes a bit stubborn."
+image: "/MidheavenTaurus.jpg"
+slug: "midheaven-in-taurus"
+---
+
 # Midheaven in Taurus: Abundance Galore
 
 The sign Taurus is known for being simple, grounded, and sometimes a bit stubborn. With a Midheaven in Taurus in the birth chart, the person’s aspirations are affected by these traits. With a Midheaven in Taurus, you aim to create a strong foundation for yourself. Regardless of which profession you choose, you need tangible results. You have an innate desire to leave a footprint in this world that will last a lifetime.

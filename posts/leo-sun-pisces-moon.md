@@ -1,3 +1,11 @@
+---
+title: "Leo Sun Pisces Moon – The Visionary"
+excerpt: "People born with a Leo Sun Pisces moon placement can be the most intriguing individuals."
+image: "/leo1.jpg"
+slug: "leo-sun-pisces-moon"
+
+---
+
 # Leo Sun Pisces Moon – The Visionary
 
 People born with a Leo Sun Pisces moon placement can be the most intriguing individuals. Friends and family know them to have an extraordinary imagination, a high level of optimism, and a very kind soul.
