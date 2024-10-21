@@ -16,21 +16,45 @@ export default async function PostPage({ params }: PostPageProps) {
 
   return (
     <section id="post__page">
-      <div className="row">
-        <article className="post__content">
-          <h1>{post.title}</h1>
-          <div className="post__image--wrapper">
-            <img src={post.image} alt={post.title} className="post__image" />
-          </div>
-          <p className="post__excerpt">{post.excerpt}</p>
-          <ReactMarkdown className="post__body">{post.content}</ReactMarkdown>
-        </article>
-      </div>
-      <div className="sticky-sidebar">
-        <div className="ad__container">
-          <h3>Advertisement</h3>
-          <div className="ad">Your Ad Here</div>
+      <div className="row post__content--wrapper">
+        <div className="post__content--cta">
+          <span className="post__content--cta-emphasis">
+            2025 Year Ahead Report
+          </span>{" "}
+          - Discover the exciting details of 2025 with a professional 250-page
+          professional astrology reading.
         </div>
+        <div className="post__image--wrapper">
+          <img src={post.image} alt={post.title} className="post__image" />
+        </div>
+
+        <div className="post__content--header">
+          <h1>{post.title}</h1>
+          <p className="post__excerpt">{post.excerpt}</p>
+          <div className="post__info">
+            <div className="post__tags--container">
+              {post.tags && (
+                <div className="post__tags">
+                  {post.tags.map((tag, index) => (
+                    <p key={index} className="tag__item">
+                      {tag}
+                    </p>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+  
+        <article className="post__content">
+          <ReactMarkdown className="post__body">{post.content}</ReactMarkdown>
+        <div className="sticky-sidebar">
+          <div className="ad__container">
+            <h3>Advertisement</h3>
+            <div className="ad">Your Ad Here</div>
+          </div>
+        </div>
+        </article>
       </div>
     </section>
   );

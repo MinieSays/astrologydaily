@@ -21,6 +21,8 @@ export function getAllPosts(): Post[] {
       image: data.image || "/default-image.jpg",
       slug,
       content,
+      tags: data.tags || [],
+      date: data.date || "No date provided", 
     };
   });
 }
@@ -38,6 +40,8 @@ export function getPostBySlug(slug: string): Post | null {
       image: data.image || "/default-image.jpg",
       slug,
       content,
+      tags: data.tags || [],
+      date: data.date || "No date provided", 
     };
   }
 
