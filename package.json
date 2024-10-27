@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@storyblok/react": "^3.0.15",
     "gray-matter": "^4.0.3",
     "next": "14.2.15",
     "react": "^18",

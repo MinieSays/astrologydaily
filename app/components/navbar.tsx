@@ -19,7 +19,11 @@ const Navbar = () => {
       <div className="nav__container">
         <div className="row">
           <div className="nav__wrapper">
-            <div className="logo__container">Astrology Daily</div>
+            <div className="logo__container">
+              <img src="/astrology daily.png" alt="" className="logo__img" />
+
+              <p className="logo__text">Astrology Daily</p>
+            </div>
             <ul className="nav__links">
               <li className="nav__link">
                 <a href="/home">Home</a>

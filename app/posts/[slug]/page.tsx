@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import { getPostBySlug } from "../../../lib/posts";
+import Ad from "@/app/components/ui/ad";
 
 type PostPageProps = {
   params: {
@@ -49,10 +50,7 @@ export default async function PostPage({ params }: PostPageProps) {
         <article className="post__content">
           <ReactMarkdown className="post__body">{post.content}</ReactMarkdown>
         <div className="sticky-sidebar">
-          <div className="ad__container">
-            <h3>Advertisement</h3>
-            <div className="ad">Your Ad Here</div>
-          </div>
+              <Ad />
         </div>
         </article>
       </div>

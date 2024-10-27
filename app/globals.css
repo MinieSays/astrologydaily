@@ -31,11 +31,31 @@ a {
 NAVBAR
 
 */
+
+.nav__container {
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.logo__text {
+  font-weight: 600;
+}
+
+.logo__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 6px;
+}
+
 .nav__container {
   padding: 20px 0;
   font-size: 20px;
   color: white;
-  background-color: #2a2a2a;
 }
 
 .nav__wrapper {
@@ -50,21 +70,32 @@ NAVBAR
 }
 
 .nav__link {
-  color: white;
-}
-
-.nav__link a {
-  color: white;
+  position: relative; 
+  font-weight: 500;
+  color: black;
   text-decoration: none;
 }
 
-.nav__link a:hover {
-  text-decoration: underline;
+.nav__link::after {
+  content: "";
+  position: absolute;
+  height: 2px; 
+  background-color: black; 
+  bottom: -2px; 
+  left: 0;
+  width: 0;
+  transition: width 0.3s ease; 
 }
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
 
 .button__hamburger {
   display: none;
   cursor: pointer;
+  color: #2a2a2a;
 }
 
 .mobile__nav--links {
@@ -86,6 +117,7 @@ NAVBAR
   right: 0;
   margin-right: 8px;
   margin-top: 4px;
+  color: #2a2a2a;
 }
 
 .mobile__nav--link {
@@ -206,13 +238,15 @@ GRID HERO
   cursor: pointer;
 }
 
+
+
 .grid__box--img--large {
   width: 100%;
   max-width: 800px;
   height: 100%;
 }
-.grid__box--img--large:hover,
-.grid__box--img:hover {
+.grid__container--large:hover,
+.grid__container--small-wrapper:hover {
   transform: scale(1.01);
   transition: transform 0.3s ease-in-out;
 }
@@ -289,6 +323,13 @@ BLOG CARD
   background-color: #fff;
   overflow: hidden;
   transition: transform 0.3s ease;
+}
+
+.blog__card--content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 20px;
 }
 
 .blog__card:hover {
@@ -417,12 +458,12 @@ h1 {
 }
 
 .post__body {
-  padding-right: 100px;
+  margin-right: 20px;
+  font-size: 20px;
 }
 
 .sticky-sidebar {
   width: 400px;
-  background-color: blue;
   max-width: 100%;
   position: sticky;
   top: 0;
@@ -430,18 +471,17 @@ h1 {
 }
 
 .ad__container {
-  width: 250px;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  width: 300px;
   text-align: center;
 }
 
 .ad {
   height: 200px;
   margin-top: 10px;
-  background-color: #e0e0e0;
+  background-image: url('/ad_bg.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -463,5 +503,44 @@ h1 {
 
   .mobile__nav--links {
     display: flex;
+  }
+
+  #post__page {
+    padding: 20px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .post__body {
+    font-size: 20px;
+  }
+
+  .post__content {
+    flex-direction: column;
+  }
+
+  .sticky-sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post__image {
+    height: 200px; 
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .post__excerpt {
+    font-size: 14px;
+  }
+
+  .post__body {
+    font-size: 0.8rem;
   }
 }

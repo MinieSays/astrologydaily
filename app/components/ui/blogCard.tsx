@@ -17,12 +17,11 @@ const BlogCard = ({ title, excerpt, image, slug }: BlogCardProps) => {
         <img src={image} className="post__img" alt={title} />
       </Link>
 
-      <div className="post__content">
+      <div className="blog__card--content-wrapper">
         <Link href={`/posts/${formattedSlug}`}>
           <h3 className="post__title">{title}</h3>
         </Link>
-
-        <p className="post__description">{excerpt}</p>
+        <p className="post__description">{excerpt.split(' ').slice(0, 20).join(' ') + (excerpt.split(' ').length > 30 ? "..." : '')}</p>
         <Link href={`/posts/${formattedSlug}`}>
           <span className="post__button">Read More</span>
         </Link>

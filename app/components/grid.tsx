@@ -13,6 +13,7 @@ const Grid = ({ posts }: GridProps) => {
     console.log(posts);
   }, [posts]);
 
+
   return (
     <section id="grid__container">
       <div className="grid__wrapper row">
@@ -31,7 +32,7 @@ const Grid = ({ posts }: GridProps) => {
                       {post.title}
                     </h4>
                     <p className="grid__container--large--description">
-                      {post.excerpt}
+                      {post.excerpt.split(' ').slice(0, 30).join(' ') + (post.excerpt.split(' ').length > 30 ? "..." : '')}
                     </p>
                   </Link>
                 </>
@@ -40,6 +41,7 @@ const Grid = ({ posts }: GridProps) => {
         </div>
         <div className="grid__container--small">
           {posts.slice(1, 3).map((post, index) => (
+            <div key={index} className="grid__container--small-wrapper">
             <Link href={`/posts/${post.slug}`} key={post.title}>
               <div
                 key={index}
@@ -53,6 +55,7 @@ const Grid = ({ posts }: GridProps) => {
                 <h3 className="grid__box--small-title">{post.title}</h3>
               </div>
             </Link>
+            </div>
           ))}
         </div>
       </div>
